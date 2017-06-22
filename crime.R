@@ -20,3 +20,10 @@ symbols(crime$murder,crime$burglary,circles=radius,inches=0.35,fg='white',bg='re
 symbols(crime$murder,crime$burglary,squares = sqrt(crime$population),inches = 0.5)
 
 text(crime$murder,crime$burglary,crime$state,cex = 0.5)
+
+
+birth <- read.csv('http://datasets.flowingdata.com/birth-rate.csv')
+stem(birth$X2008)
+hist(birth$X2008)
+hist(birth$X2008,breaks = 20)
+birth2008 <- birth$X2008[!is.na(birth$X2008)]

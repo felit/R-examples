@@ -1,0 +1,6 @@
+plot(c(1,2,3),c(1,2,4))
+x<-c(1,2,3)
+y<-c(1,3,8)
+plot(x,y)
+lmout<-lm(y~x)
+abline(lmout)
